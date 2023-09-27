@@ -11,7 +11,7 @@ keymap = [
   { keys = ["ctrl+c"], command = "quit" },
   { keys = ["Q"], command = "quit --output-current-directory" },
 
-  { keys = ["R"], command = "reload_dirlist" },
+  { keys = ["f", "r"], command = "reload_dirlist" },
   { keys = ["z", "h"], command = "toggle_hidden" },
   { keys = ["ctrl+h"], command = "toggle_hidden" },
   { keys = ["\t"], command = "tab_switch 1" },
@@ -53,7 +53,9 @@ keymap = [
   { keys = ["l"], command = "open" },
   { keys = ["g", "g"], command = "cursor_move_home" },
   { keys = ["G"], command = "cursor_move_end" },
-  { keys = ["r"], command = "open_with" },
+  # { keys = ["r"], command = "open_with" },
+  { keys = ["r"], command = "rename_append" },
+  { keys = ["R"], command = "rename_prepend" },
 
   { keys = ["H"], command = "cursor_move_page_home" },
   { keys = ["L"], command = "cursor_move_page_middle" },
@@ -79,10 +81,8 @@ keymap = [
   { keys = ["p", "p"], command = "paste_files" },
   { keys = ["p", "o"], command = "paste_files --overwrite=true" },
 
-  { keys = ["a"], command = "rename_append" },
-  { keys = ["A"], command = "rename_prepend" },
-
-  { keys = ["f", "t"], command = ":touch " },
+  # { keys = ["f", "t"], command = ":touch " },
+  { keys = ["a"], command = ":touch " },
 
   { keys = [" "], command = "select --toggle=true" },
   { keys = ["t"], command = "select --all=true --toggle=true" },
