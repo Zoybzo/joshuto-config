@@ -32,6 +32,7 @@ video_default = [
 ]
 
 text_default = [
+  # { command = "ovim"},
   { command = "micro" },
   { command = "gedit", fork = true, silent = true },
   { command = "bat", args = [
@@ -207,6 +208,7 @@ kdenlive.app_list = [{ command = "kdenlive", fork = true, silent = true }]
 
 tex.app_list = [
   { command = "micro" },
+  { command = "neovim"},
   { command = "gedit", fork = true, silent = true },
   { command = "bat", confirm_exit = true },
   { command = "pdflatex" },
@@ -222,6 +224,7 @@ inherit = "video_default"
 
 # text/*
 [mimetype.text]
+# open = ['nvim {file}']
 inherit = "text_default"
 
 # text/*
