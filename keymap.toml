@@ -12,7 +12,7 @@ keymap = [
   { keys = ["Q"], command = "quit --output-current-directory" },
 
   { keys = ["E"], command = "shell zsh" },
-  { keys = ["I"], command = "shell vim" },
+  # { keys = ["I"], command = "shell vim" },
 
   { keys = ["f", "r"], command = "reload_dirlist" },
   
